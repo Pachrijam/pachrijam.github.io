@@ -1,4 +1,5 @@
 # Website Architecture
+```
 .
 ├───.github
 │   ├───copilot
@@ -7,3 +8,4 @@
 ├───pages
 └───src
     └───images
+```
