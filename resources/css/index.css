@@ -1,33 +1,115 @@
 html {
-    background-color: black;
+    background-color: #222;
 }
 
 body {
     margin: 0;
 }
 
-.container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+.homepage-container {
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    opacity: 20%;
 }
 
-.container img {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
+.left-side-container {
+    display: flex;
 }
 
-.container-background {
-    flex: 1 2 auto;
-    max-width: 100%;
-    height: 70%;
-    object-fit: contain;
-    border-radius: 6px;
+.center-container {
+    display: grid;
+}
+
+.right-side-container {
+    display: flex;
+}
+
+.terminal-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 4vw;
+    min-height: 94vh;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 7px;
+    border-width: 2px;
+    color: white;
+    border: 2px solid #333;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    z-index: 0;
+}
+
+.explorer {
+    width: 12vw;
+    min-height: 94vh;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 7px;
+    border-width: 2px;
+    color: white;
+    border: 2px solid #333;
+    margin-top: 10px;
+    margin-left: -20px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.search {
+    width: 60vw;
+    height: 1vh;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 12px;
+    border-width: 2px;
+    color: white;
+    border: 2px solid #333;
+    margin-top: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main-display {
+    width: 60vw;
+    height: 89vh;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 7px;
+    border-width: 2px;
+    color: white;
+    border: 2px solid #333;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.terminal {
+    position: absolute;
+    width: 60vw;
+    height: 20vh;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 7px;
+    border-width: 2px;
+    color: white;
+    border: 2px solid #333;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: 75vh;
+}
+
+.featured {
+    width: 16.75vw;
+    min-height: 94vh;
+    overflow: hidden;
+    background-color: #222;
+    border-radius: 7px;
+    border-width: 2px;
+    color: white;
+    border: 2px solid #333;
+    margin-top: 10px;
+    padding: 10px;
+    z-index: 0;
 }
