@@ -4,8 +4,9 @@
 ├───.github
 │   ├───copilot
 │   └───workflows
-├───css
+├───documentation
 ├───pages
+├───resources
+│   ├───css
+│   └───images
 └───src
-    └───images
-```
