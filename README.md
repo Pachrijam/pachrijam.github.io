@@ -9,4 +9,6 @@
 ├───resources
 │   ├───css
 │   └───images
+│       ├───bgs
+│       └───buttons
 └───src
