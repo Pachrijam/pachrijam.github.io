@@ -50,6 +50,7 @@ body {
     margin-bottom: 20px;
     margin-left: 2px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .sidebar image {
@@ -58,7 +59,12 @@ body {
     object-position: center;
     object-fit: cover;
     margin-top: 10px;
-    border-radius: 10px;   
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar a:hover img {
+    background-color: gray;
 }
 
 .explorer {
