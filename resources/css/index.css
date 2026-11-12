@@ -47,8 +47,18 @@ body {
     width: 65%;
     object-position: center;
     object-fit: cover;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 2px;
     border-radius: 10px;
+}
+
+.sidebar image {
+    display: block;
+    width: 65%;
+    object-position: center;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 10px;   
 }
 
 .explorer {
