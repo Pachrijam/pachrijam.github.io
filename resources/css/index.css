@@ -134,8 +134,7 @@ body {
 
 .featured {
     width: 16.75vw;
-    min-height: 94vh;
-    overflow: hidden;
+    max-height: 94vh;
     background-color: #222;
     border-radius: 7px;
     border-width: 2px;
@@ -144,17 +143,20 @@ body {
     margin-top: 10px;
     padding: 10px;
     z-index: 0;
+    overflow-y: scroll;
+    scrollbar-color: #333 #111;
 }
 
 .featured h1 {
     margin-top: 0%;
+    margin-bottom: 15px;
     font-size:large;
     font-weight: 100;
 }
 
 .featured iframe {
   position: relative;
-  border-radius: 5px;
+  border-radius: 7px;
   width: 100%;
 }
 
