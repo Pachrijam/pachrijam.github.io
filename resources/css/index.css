@@ -156,7 +156,6 @@ body {
   position: relative;
   border-radius: 5px;
   width: 100%;
-  overflow: hidden;
 }
 
 .responsive-iframe {
