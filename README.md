@@ -5,10 +5,14 @@
 │   ├───copilot
 │   └───workflows
 ├───documentation
+│   └───progress-updates
+│       └───11
+│           └───14
 ├───pages
 ├───resources
 │   ├───css
 │   └───images
 │       ├───bgs
-│       └───buttons
+│       ├───featured-previews
+│       └───sidebar-icons
 └───src
