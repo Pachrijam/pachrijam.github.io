@@ -131,15 +131,42 @@ body {
 
 .menu {
   width: 12vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu h1 {
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.menu-item h1 {
+  margin: 0;
   font-size: medium;
-  color: red;
+  color: #bbb;
 }
 
-.menu image {
+.menu-item h2 {
+  margin: 0;
+  font-size: small;
+  color: #999;
+}
 
+.menu-arrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.menu-file-icon {
+  width: 22px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-left: 5px;
 }
 
 .search {
