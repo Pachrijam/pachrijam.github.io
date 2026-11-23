@@ -237,7 +237,7 @@ body {
 
 .text-banner {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   max-height: 4vh;
 }
 
@@ -263,6 +263,27 @@ body {
   font-size: 15px;
   font-weight: 20;
   opacity: 30%;
+}
+
+.terminal img {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  object-fit: contain;
+  margin-top: -5px;
+  opacity: 50%;
+}
+
+.terminal h3 {
+  color: #aaa;
+  font-size: 15px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin-top: -0.5%;
+  margin-bottom: 13px;
+  font-weight: 20;
+  opacity: 30%;
+  margin-left: 435px;
 }
 
 .featured {
