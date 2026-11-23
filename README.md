@@ -13,5 +13,6 @@
 │       ├───bgs
 │       ├───explorer
 │       ├───featured-previews
-│       └───sidebar-icons
+│       ├───sidebar-icons
+│       └───terminal
 └───src
