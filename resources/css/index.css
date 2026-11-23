@@ -313,17 +313,94 @@ body {
   border-radius: 9px;
   width: 100%;
   border: 1px solid grey;
+  border-style:double;
+}
+
+.featured a {
+  position: relative;
+  display: block;
+  border-radius: 9px;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid grey;
+  margin-bottom: 5px;
 }
 
 .featured a img {
-  width: 16.75vw;
+  display: block;
   position: relative;
+  border-radius: 9px;
+  border: 2px solid white;
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  margin-bottom: 15px;
-  margin-top: 5px;
+  height: auto;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.overlay-text {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 58%;
+  padding: 20px 28px 8px 8px;
+  box-sizing: border-box;
+  color: white;
+  background: linear-gradient(180deg, transparent 0%, rgba(8, 10, 12, 0.78) 62%, rgba(8, 10, 12, 0.96) 100%);
+  pointer-events: none;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.overlay-kicker {
+  margin-bottom: 3px;
+  color: #ffd166;
+  font-size: 7px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.overlay-title {
+  max-width: 92%;
+  font-size: clamp(9px, 0.72vw, 13px);
+  font-weight: 800;
+  line-height: 1.12;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.overlay-arrow {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  display: grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 9px;
+  line-height: 1;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.featured a:hover img,
+.featured a:focus-visible img {
+  transform: scale(1.025);
+  filter: brightness(1.08);
+}
+
+.featured a:hover .overlay-arrow,
+.featured a:focus-visible .overlay-arrow {
+  transform: translate(1px, -1px);
+  background: rgba(255, 209, 102, 0.25);
+  border-color: #ffd166;
+}
+
+.featured a:focus-visible {
+  outline: 2px solid #ffd166;
+  outline-offset: 3px;
 }
 
