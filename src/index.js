@@ -2,7 +2,11 @@ document.getElementById("reloadButton").addEventListener("click", function() {
     location.reload();
 });
 
-document.getElementById("menu-toggle").addEventListener("click", function(){
-    var myCollapse = bootstrap.Collapse.getOrCreateInstance("menu-collapse");
-    myCollapse.toggle();
+const menuToggle = document.getElementById("menu-toggle");
+const menuFiles = document.getElementById("menu-files");
+
+menuToggle.addEventListener("click", function() {
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+    menuFiles.inert = isExpanded;
 });
