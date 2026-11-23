@@ -330,7 +330,7 @@ body {
   display: block;
   position: relative;
   border-radius: 9px;
-  border: 2px solid white;
+  border: 1px solid white;
   width: 100%;
   height: auto;
   transition: transform 180ms ease, filter 180ms ease;
