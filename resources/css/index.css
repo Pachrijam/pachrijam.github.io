@@ -217,11 +217,19 @@ body {
   font-weight: 100;
 }
 
+.menu-item h2:hover {
+  color: white;
+}
+
 .sub-menu-item h2 {
   margin: 0;
   font-size: medium;
   color: #999;
   font-weight: 100;
+}
+
+.sub-menu-item h2:hover {
+  color: white;
 }
 
 .menu-arrow {
@@ -458,12 +466,12 @@ body {
 .featured a:hover .overlay-arrow,
 .featured a:focus-visible .overlay-arrow {
   transform: translate(1px, -1px);
-  background: rgba(255, 209, 102, 0.25);
-  border-color: #ffd166;
+  background: rgba(102, 153, 255, 0.25);
+  border-color: #667fff;
 }
 
 .featured a:focus-visible {
-  outline: 2px solid #ffd166;
+  outline: 2px solid #667fff;
   outline-offset: 3px;
 }
 
