@@ -5,6 +5,5 @@
     <!-- fix this after making the blog page -->
     <link>https://pachrijam.github.io/blog</link>
     <description>An RSS feed made for my personal website</description>
-    <item>
   </channel>
 </rss>
