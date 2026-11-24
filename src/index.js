@@ -14,12 +14,14 @@ const subMenuToggle = document.getElementById("sub-menu-toggle");
 const menuFiles = document.getElementById("menu-files");
 const subMenuFiles = document.getElementById("sub-menu-files");
 
+// main folder toggle
 menuToggle.addEventListener("click", function() {
     const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!isExpanded));
     menuFiles.inert = isExpanded;
 });
 
+// sub-folder toggle
 subMenuToggle.addEventListener("click", function() {
     const isExpanded = subMenuToggle.getAttribute("aria-expanded") === "true";
     subMenuToggle.setAttribute("aria-expanded", String(!isExpanded));

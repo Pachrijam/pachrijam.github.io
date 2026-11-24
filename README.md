@@ -9,10 +9,11 @@
 ├───pages
 ├───resources
 │   ├───css
-│   └───images
-│       ├───bgs
-│       ├───explorer
-│       ├───featured-previews
-│       ├───sidebar-icons
-│       └───terminal
+│   ├───images
+│   │   ├───bgs
+│   │   ├───explorer
+│   │   ├───featured-previews
+│   │   ├───sidebar-icons
+│   │   └───terminal
+│   └───xml
 └───src

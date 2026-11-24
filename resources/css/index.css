@@ -433,13 +433,13 @@ body {
   right: 7px;
   bottom: 7px;
   display: grid;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 50%;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.12);
-  font-size: 9px;
+  font-size: 20px;
   line-height: 1;
   transition: transform 180ms ease, background-color 180ms ease;
 }
