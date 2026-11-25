@@ -324,6 +324,10 @@ body {
   word-wrap: break-word;
 }
 
+#fileContent.hljs {
+  background: transparent;
+}
+
 .terminal {
   position: absolute;
   width: 60vw;
