@@ -32,7 +32,6 @@ subMenuToggle.addEventListener("click", function() {
 
 // click handler for code display
 const fileContent = document.getElementById("fileContent");
-
 document.querySelectorAll(".file-item").forEach((button) => {
   button.addEventListener("click", async () => {
     try {
@@ -41,7 +40,26 @@ document.querySelectorAll(".file-item").forEach((button) => {
         throw new Error(`Failed to load ${button.dataset.file}`);
       }
 
+      // code styling
+
       fileContent.textContent = await response.text();
+      const extension = button.dataset.file.split(".").pop().toLowerCase();
+      const languages = {
+        cpp: "cpp",
+        py: "python",
+        js: "javascript",
+        json: "json",
+        xml: "xml",
+        php: "php",
+        md: "markdown"
+      };
+
+      fileContent.removeAttribute("data-highlighted");
+      fileContent.className = `language-${languages[extension] || "plaintext"}`;
+
+      if (languages[extension]) {
+        hljs.highlightElement(fileContent);
+      }
     } catch (error) {
       console.error(error);
       fileContent.textContent = "Could not load file. Check the path.";
