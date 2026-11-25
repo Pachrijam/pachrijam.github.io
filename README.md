@@ -24,5 +24,6 @@
 │       └───terminal
 └───src
     ├───explorer-code-files
-    │   └───extra
+    │   └───extra-code-files
     └───explorer-output-files
+        └───extra-output-files

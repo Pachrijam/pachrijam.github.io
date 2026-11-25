@@ -29,3 +29,4 @@ subMenuToggle.addEventListener("click", function() {
     subMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
     subMenuFiles.inert = isExpanded;
 });
+
