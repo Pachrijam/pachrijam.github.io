@@ -16,11 +16,13 @@
 ├───pages
 ├───resources
 │   ├───css
-│   ├───images
-│   │   ├───bgs
-│   │   ├───explorer
-│   │   ├───featured-previews
-│   │   ├───sidebar-icons
-│   │   └───terminal
-│   └───xml
+│   └───images
+│       ├───bgs
+│       ├───explorer
+│       ├───featured-previews
+│       ├───sidebar-icons
+│       └───terminal
 └───src
+    ├───explorer-code-files
+    │   └───extra
+    └───explorer-output-files
