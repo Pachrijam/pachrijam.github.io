@@ -6,7 +6,7 @@
     <description>Computer Systems Engineering and ITWS dual major at Rensselaer Polytechnic Institute, focused on building practical, purposeful software and hardware</description>
     <language>en-us</language>
     <image>
-      <url>resources\images\favicon.png</url>
+      <url>./resources/images/favicon.png</url>
     </image>
     <item>
       <title>My First Hackathon</title>
