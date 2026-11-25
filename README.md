@@ -4,6 +4,7 @@
 - [https://sridhs21.github.io/](https://sridhs21.github.io/)
 - [https://terminal.satnaing.dev/](https://terminal.satnaing.dev/)
 - [https://github.com/vscode-icons/vscode-icons/](https://github.com/vscode-icons/vscode-icons/)
+- [https://highlightjs.org/](https://highlightjs.org/)
 
 # Website Architecture
 ```
