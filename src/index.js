@@ -1,6 +1,8 @@
 /*
-    index.js provides functionality to the left container of the homepage.
-    This includes the reload button and explorer psuedo file behavior.
+    index.js provides functionality to the left container of the homepage
+    as well as the main display of the homepage. This includes the reload 
+    button, menu toggling in the explorer tab, and displaying code to the 
+    main content area dynamically.
 */ 
 
 // reload button

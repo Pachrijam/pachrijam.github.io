@@ -1,0 +1,25 @@
+{
+  "hobbies": 
+  [ 
+    {
+      "hobby" : "hiking, camping, and national park enthusiast",
+      "Why" : "I have always enjoyed the outdoors whether it's with my family, friends, or scouting troop and I hope to one day visit all of America's national parks!"
+    },
+    {
+      "hobby" : "classical piano",
+      "Why" : "I have a developed a strong liking to listening and playing classical works by Chopin, Liszt, Rachmaninoff, and more!"
+    },
+    {
+      "hobby" : "3d printing",
+      "Why" : "Towards the end of my junior year of high school, I started learning how to print on my Ender 3 and enjoyed learning how to print whatever I wanted!"
+    },
+    {
+      "hobby" : "gaming",
+      "Why" : "I have enjoyed playing The Legend of Zelda, Geometry Dash, friendslop pc games, and horror games for years!"
+    },
+    {
+      "hobby" : "programming side projects",
+      "Why" : "I enjoy the idea of thinking of something I want to make, and then actually making it! Learning how to program taught me how to make software I think is cool, useful or not!"
+    }
+  ]
+}
