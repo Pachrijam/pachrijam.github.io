@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Paul Allen - Updates/News</title>
+    <link>https://pachrijam.github.io/</link>
+    <description>Computer Systems Engineering and ITWS dual major at Rensselaer Polytechnic Institute, focused on building practical, purposeful software and hardware</description>
+    <language>en-us</language>
+    <item>
+      <title>My First Hackathon</title>
+      <link>https://www.linkedin.com/feed/update/urn:li:activity:7526086819961024512/</link>
+      <date>Nov. 8th, 2026</date>
+      <description>A reflection of my first hackathon experience at HackRPI</description>
+      <category>Computer Science</category>
+      <category>Hackathon</category>
+    </item>
+    <item>
+      <title>Becoming an Eagle Scout</title>
+      <link>https://www.tapinto.net/towns/scotch-plains-slash-fanwood/sections/community-life/articles/fanwood-troop-33-recognizes-four-eagle-scouts-at-court-of-honor</link>
+      <date>June 14, 2026</date>
+      <description>An article detailing my Eagle Scout ceremony and the project I completed for the Fanwood Nature Center</description>
+      <category>Boy Scouts</category>
+      <category>Community Service</category>
+    </item>
+  </channel>
+</rss>
