@@ -91,10 +91,10 @@
                       <img class="menu-file-icon" src="./resources/images/explorer/text.svg">
                       <h2>blog.md</h2>
                     </div>
-                    <div class="sub-menu-item">
+                    <button class="sub-menu-item file-item" type="button" data-file="./src/explorer-code-files/extra-code-files/hobbies.json">
                       <img class="menu-file-icon" src="./resources/images/explorer/json.svg" alt="">
                       <h2>hobbies.json</h2>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,9 @@
         </div>
       </div>
       <div class="center-container">
-        <div class="main-display"></div>
+        <div class="main-display" id="codeContainer">
+          <pre><code id="fileContent">Select a file...</code></pre>
+        </div>
         <div class="terminal">
           <div class="text-banner">
             <h1>Terminal</h1>

@@ -30,3 +30,21 @@ subMenuToggle.addEventListener("click", function() {
     subMenuFiles.inert = isExpanded;
 });
 
+// click handler for code display
+const fileContent = document.getElementById("fileContent");
+
+document.querySelectorAll(".file-item").forEach((button) => {
+  button.addEventListener("click", async () => {
+    try {
+      const response = await fetch(button.dataset.file);
+      if (!response.ok) {
+        throw new Error(`Failed to load ${button.dataset.file}`);
+      }
+
+      fileContent.textContent = await response.text();
+    } catch (error) {
+      console.error(error);
+      fileContent.textContent = "Could not load file. Check the path.";
+    }
+  });
+});
