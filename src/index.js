@@ -7,7 +7,7 @@
 
 // reload button
 document.getElementById("reloadButton").addEventListener("click", function() {
-    location.reload();
+  location.reload();
 });
 
 // Explorer file toggling, folder toggling, and subfolder toggling
@@ -18,16 +18,16 @@ const subMenuFiles = document.getElementById("sub-menu-files");
 
 // main folder toggle
 menuToggle.addEventListener("click", function() {
-    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-    menuToggle.setAttribute("aria-expanded", String(!isExpanded));
-    menuFiles.inert = isExpanded;
+  const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+  menuFiles.inert = isExpanded;
 });
 
 // sub-folder toggle
 subMenuToggle.addEventListener("click", function() {
-    const isExpanded = subMenuToggle.getAttribute("aria-expanded") === "true";
-    subMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
-    subMenuFiles.inert = isExpanded;
+  const isExpanded = subMenuToggle.getAttribute("aria-expanded") === "true";
+  subMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
+  subMenuFiles.inert = isExpanded;
 });
 
 // click handler for code display
@@ -66,3 +66,8 @@ document.querySelectorAll(".file-item").forEach((button) => {
     }
   });
 });
+
+// open about.md automatically upon page load
+document
+  .querySelector('.file-item[data-file="./src/explorer-code-files/about.md"]')
+  .click();
