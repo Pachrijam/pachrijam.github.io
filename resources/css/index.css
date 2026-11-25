@@ -309,14 +309,13 @@ body {
   border: 2px solid #333;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
   margin-top: 10px;
+  padding-left: 10px;
 }
 
 .codeContainer {
   background: #f4f4f4;
   border: 1px solid #ddd;
-  padding: 1em 1.5em;
   font-family: monospace;
   font-size: 15px;
   overflow: auto;
@@ -326,6 +325,7 @@ body {
 
 #fileContent.hljs {
   background: transparent;
+  padding-top: 0px;
 }
 
 .terminal {
