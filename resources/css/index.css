@@ -135,13 +135,6 @@ body {
   flex-direction: column;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 10px;
-}
-
 .sub-menu-item button {
   display: flex;
   align-items: center;
@@ -149,19 +142,33 @@ body {
   margin-bottom: 10px;
 }
 
-#menu-toggle {
-  background: none;
-  border: 0;
+.menu-item button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.menu-files-inner > .file-item,
+.sub-menu-files-inner > .file-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  margin-bottom: 10px;
   padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
   font: inherit;
-  font-size: medium;
-  font-weight: 100;
-  color: #bbb;
   text-align: left;
   cursor: pointer;
 }
 
-#sub-menu-toggle {
+#menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   background: none;
   border: 0;
   padding: 0;
@@ -171,6 +178,23 @@ body {
   color: #bbb;
   text-align: left;
   cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#sub-menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-size: medium;
+  font-weight: 100;
+  color: #bbb;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 
@@ -282,7 +306,7 @@ body {
   border-radius: 7px;
   border-width: 2px;
   color: white;
-  border: 2px solid #797979;
+  border: 2px solid #333;
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
