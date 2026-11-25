@@ -5,6 +5,9 @@
     <link>https://pachrijam.github.io/</link>
     <description>Computer Systems Engineering and ITWS dual major at Rensselaer Polytechnic Institute, focused on building practical, purposeful software and hardware</description>
     <language>en-us</language>
+    <image>
+      <url>resources\images\favicon.png</url>
+    </image>
     <item>
       <title>My First Hackathon</title>
       <link>https://www.linkedin.com/feed/update/urn:li:activity:7526086819961024512/</link>
