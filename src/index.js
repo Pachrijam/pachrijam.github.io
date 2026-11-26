@@ -1,8 +1,8 @@
 /*
     index.js provides functionality to the left container of the homepage
     as well as the main display of the homepage. This includes the reload 
-    button, menu toggling in the explorer tab, and displaying code to the 
-    main content area dynamically.
+    button, menu toggling in the explorer tab, resizing divs through dragging, 
+    and displaying code to the main content area dynamically.
 */ 
 
 // reload button

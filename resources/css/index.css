@@ -133,6 +133,8 @@ body {
   margin-left: -20px;
   z-index: 1;
   padding: 10px;
+  cursor: w-resize;
+  resize: horizontal;
 }
 
 .explorer h1 {
@@ -327,6 +329,7 @@ body {
   padding-left: 10px;
   flex: 1;
   scrollbar-color: #333 #111;
+  cursor:n-resize;
 }
 
 .codeContainer {
@@ -361,6 +364,8 @@ body {
   margin-right: 10px;
   padding: 10px;
   font-family: monospace, "Courier New", monospace;
+  cursor: n-resize;
+  resize: vertical;
 }
 
 .text-banner {
@@ -430,6 +435,9 @@ body {
   z-index: 0;
   overflow-y: scroll;
   scrollbar-color: #333 #111;
+  cursor: e-resize;
+  resize: horizontal;
+  direction: rtl;
 }
 
 .featured h1 {
@@ -534,4 +542,3 @@ body {
   outline: 2px solid #667fff;
   outline-offset: 3px;
 }
-
