@@ -117,3 +117,22 @@ featuredHandle.addEventListener("pointermove", (event) => {
   const newWidth = featuredStartWidth - (event.clientX - featuredStartX);
   featured.style.width = `${Math.max(120, newWidth)}px`;
 });
+
+// .terminal vertical div resizing ---------------------------------------------------------------|
+const terminal = document.querySelector(".terminal");
+const terminalHandle = document.querySelector(".terminal-resize-handle");
+let terminalStartY;
+let terminalStartHeight;
+
+terminalHandle.addEventListener('pointerdown', (event) => {
+  terminalStartY = event.clientY;
+  terminalStartHeight = terminal.getBoundingClientRect().height;
+  terminalHandle.setPointerCapture(event.pointerId);
+});
+
+terminalHandle.addEventListener("pointermove", (event) => {
+  if(!terminalHandle.hasPointerCapture(event.pointerId)) return;
+
+  const newHeight = terminalStartHeight - (event.clientY - terminalStartY);
+  terminal.style.height = `${Math.max(80, newHeight)}px`;
+});

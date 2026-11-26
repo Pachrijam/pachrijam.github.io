@@ -359,6 +359,7 @@ body {
 }
 
 .terminal {
+  position: relative;
   box-sizing: border-box;
   flex-shrink: 0;
   width: auto;
@@ -373,8 +374,7 @@ body {
   margin-right: 10px;
   padding: 10px;
   font-family: monospace, "Courier New", monospace;
-  cursor: n-resize;
-  resize: vertical;
+  resize: none;
 }
 
 .text-banner {
@@ -428,6 +428,17 @@ body {
   font-weight: 20;
   opacity: 30%;
   margin-left: auto;
+}
+
+.terminal-resize-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  cursor: ns-resize;
+  touch-action: none;
+  z-index: 1;
 }
 
 .featured {
