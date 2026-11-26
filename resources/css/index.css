@@ -9,15 +9,25 @@ body {
 
 .homepage-container {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .left-side-container {
   display: flex;
+  height: calc(100vh - 9px);
   overflow: hidden;
 }
 
 .center-container {
-  display: grid;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100vh - 10px);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .right-side-container {
@@ -31,7 +41,8 @@ body {
 .sidebar {
   position: relative;
   width: 4vw;
-  min-height: 94vh;
+  height: calc(100% - 34px);
+  min-height: 0;
   overflow: hidden;
   background-color: #222;
   border-radius: 7px;
@@ -110,7 +121,8 @@ body {
 
 .explorer {
   width: 12vw;
-  min-height: 94vh;
+  height: calc(100% - 34px);
+  min-height: 0;
   overflow: hidden;
   background-color: #222;
   border-radius: 7px;
@@ -299,8 +311,10 @@ body {
 }
 
 .main-display {
-  width: 60vw;
-  height: 89vh;
+  box-sizing: border-box;
+  width: auto;
+  min-height: 0;
+  height: auto;
   overflow: auto;
   background-color: #222;
   border-radius: 7px;
@@ -311,6 +325,7 @@ body {
   margin-right: 10px;
   margin-top: 10px;
   padding-left: 10px;
+  flex: 1;
 }
 
 .codeContainer {
@@ -321,6 +336,7 @@ body {
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
+  max-height: 40vh;
 }
 
 #fileContent.hljs {
@@ -329,9 +345,10 @@ body {
 }
 
 .terminal {
-  position: absolute;
-  width: 60vw;
-  min-height: 20vh;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
   overflow: hidden;
   background-color: #222;
   border-radius: 7px;
@@ -342,7 +359,6 @@ body {
   margin-right: 10px;
   padding: 10px;
   font-family: monospace, "Courier New", monospace;
-  margin-top: 75vh;
 }
 
 .text-banner {
@@ -373,6 +389,8 @@ body {
   font-size: 15px;
   font-weight: 20;
   opacity: 30%;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .terminal img {
@@ -393,12 +411,13 @@ body {
   margin-bottom: 13px;
   font-weight: 20;
   opacity: 30%;
-  margin-left: 439px;
+  margin-left: auto;
 }
 
 .featured {
+  box-sizing: border-box;
   width: 16.75vw;
-  max-height: 94vh;
+  height: calc(100vh - 20px);
   background-color: #222;
   border-radius: 7px;
   border-width: 2px;
