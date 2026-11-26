@@ -445,7 +445,19 @@ body {
   overflow-y: scroll;
   scrollbar-color: #333 #111;
   cursor: e-resize;
-  resize: horizontal;
+  resize: none;
+  position: relative;
+}
+
+.featured-resize-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 8px;
+  cursor: ew-resize;
+  touch-action: none;
+  z-index: 1;
 }
 
 .featured h1 {

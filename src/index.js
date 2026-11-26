@@ -74,12 +74,12 @@ document
 
 // .explorer horizontal div resizing -------------------------------------------------------------|
 const explorer = document.querySelector(".explorer");
-const handle = document.querySelector(".explorer-resize-handle");
-let startX;
-let startWidth;
+const explorerHandle = document.querySelector(".explorer-resize-handle");
+let explorerStartX;
+let explorerStartWidth;
 
-handle.addEventListener('pointerdown', (event) => {
-  startX = event.clientX;
+explorerHandle.addEventListener('pointerdown', (event) => {
+  explorerStartX = event.clientX;
 
   const style = getComputedStyle(explorer);
   const extraWidth = 
@@ -88,13 +88,32 @@ handle.addEventListener('pointerdown', (event) => {
     parseFloat(style.borderLeftWidth) +
     parseFloat(style.borderRightWidth);
 
-  startWidth = explorer.getBoundingClientRect().width - extraWidth;
-  handle.setPointerCapture(event.pointerId);
+  explorerStartWidth = explorer.getBoundingClientRect().width - extraWidth;
+  explorerHandle.setPointerCapture(event.pointerId);
 });
 
-handle.addEventListener("pointermove", (event) => {
-  if (!handle.hasPointerCapture(event.pointerId)) return;
+explorerHandle.addEventListener("pointermove", (event) => {
+  if(!explorerHandle.hasPointerCapture(event.pointerId)) return;
 
-  const newWidth = startWidth + event.clientX - startX;
+  const newWidth = explorerStartWidth + event.clientX - explorerStartX;
   explorer.style.width = `${Math.max(80, newWidth)}px`;
+});
+
+// .featured horizontal div resizing -------------------------------------------------------------|
+const featured = document.querySelector(".featured");
+const featuredHandle = document.querySelector(".featured-resize-handle");
+let featuredStartX;
+let featuredStartWidth;
+
+featuredHandle.addEventListener('pointerdown', (event) => {
+  featuredStartX = event.clientX;
+  featuredStartWidth = featured.getBoundingClientRect().width;
+  featuredHandle.setPointerCapture(event.pointerId);
+});
+
+featuredHandle.addEventListener("pointermove", (event) => {
+  if(!featuredHandle.hasPointerCapture(event.pointerId)) return;
+
+  const newWidth = featuredStartWidth - (event.clientX - featuredStartX);
+  featured.style.width = `${Math.max(120, newWidth)}px`;
 });

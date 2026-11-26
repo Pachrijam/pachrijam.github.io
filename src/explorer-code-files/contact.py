@@ -1,7 +1,6 @@
 """
-    This program outputs my contact information
-    and allows you to send me a message!
-
+This program outputs my contact information
+and allows you to send me a message!
 """
 
 def main(sendMessage):
