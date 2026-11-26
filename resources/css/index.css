@@ -326,6 +326,7 @@ body {
   margin-top: 10px;
   padding-left: 10px;
   flex: 1;
+  scrollbar-color: #333 #111;
 }
 
 .codeContainer {
@@ -342,6 +343,7 @@ body {
 #fileContent.hljs {
   background: transparent;
   padding-top: 0px;
+  overflow-x: visible;
 }
 
 .terminal {
