@@ -5,32 +5,32 @@
     and displaying code to the main content area dynamically.
 */ 
 
-// reload button
+// reload button -------------------------------------------------------------------------------|
 document.getElementById("reloadButton").addEventListener("click", function() {
   location.reload();
 });
 
-// Explorer file toggling, folder toggling, and subfolder toggling
+// Explorer file toggling, folder toggling, and subfolder toggling -----------------------------|
 const menuToggle = document.getElementById("menu-toggle");
 const subMenuToggle = document.getElementById("sub-menu-toggle");
 const menuFiles = document.getElementById("menu-files");
 const subMenuFiles = document.getElementById("sub-menu-files");
 
-// main folder toggle
+// main folder toggle --------------------------------------------------------------------------|
 menuToggle.addEventListener("click", function() {
   const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!isExpanded));
   menuFiles.inert = isExpanded;
 });
 
-// sub-folder toggle
+// sub-folder toggle ---------------------------------------------------------------------------|
 subMenuToggle.addEventListener("click", function() {
   const isExpanded = subMenuToggle.getAttribute("aria-expanded") === "true";
   subMenuToggle.setAttribute("aria-expanded", String(!isExpanded));
   subMenuFiles.inert = isExpanded;
 });
 
-// click handler for code display
+// click handler for code display --------------------------------------------------------------|
 const fileContent = document.getElementById("fileContent");
 document.querySelectorAll(".file-item").forEach((button) => {
   button.addEventListener("click", async () => {
@@ -67,7 +67,34 @@ document.querySelectorAll(".file-item").forEach((button) => {
   });
 });
 
-// open about.md automatically upon page load
+// open about.md automatically upon page load ----------------------------------------------------|
 document
   .querySelector('.file-item[data-file="./src/explorer-code-files/about.md"]')
   .click();
+
+// .explorer horizontal div resizing -------------------------------------------------------------|
+const explorer = document.querySelector(".explorer");
+const handle = document.querySelector(".explorer-resize-handle");
+let startX;
+let startWidth;
+
+handle.addEventListener('pointerdown', (event) => {
+  startX = event.clientX;
+
+  const style = getComputedStyle(explorer);
+  const extraWidth = 
+    parseFloat(style.paddingLeft) +
+    parseFloat(style.paddingRight) +
+    parseFloat(style.borderLeftWidth) +
+    parseFloat(style.borderRightWidth);
+
+  startWidth = explorer.getBoundingClientRect().width - extraWidth;
+  handle.setPointerCapture(event.pointerId);
+});
+
+handle.addEventListener("pointermove", (event) => {
+  if (!handle.hasPointerCapture(event.pointerId)) return;
+
+  const newWidth = startWidth + event.clientX - startX;
+  explorer.style.width = `${Math.max(80, newWidth)}px`;
+});

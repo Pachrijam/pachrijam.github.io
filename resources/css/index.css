@@ -133,8 +133,18 @@ body {
   margin-left: -20px;
   z-index: 1;
   padding: 10px;
-  cursor: w-resize;
-  resize: horizontal;
+  resize: none;
+  position: relative;
+}
+
+.explorer-resize-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  cursor: ew-resize;
+  touch-action: none;
 }
 
 .explorer h1 {
@@ -329,7 +339,6 @@ body {
   padding-left: 10px;
   flex: 1;
   scrollbar-color: #333 #111;
-  cursor:n-resize;
 }
 
 .codeContainer {
@@ -437,7 +446,6 @@ body {
   scrollbar-color: #333 #111;
   cursor: e-resize;
   resize: horizontal;
-  direction: rtl;
 }
 
 .featured h1 {
