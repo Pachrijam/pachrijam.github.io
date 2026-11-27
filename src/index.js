@@ -5,11 +5,6 @@
     and displaying code to the main content area dynamically.
 */ 
 
-// open about.md automatically upon page load ----------------------------------------------------|
-document
-  .querySelector('.file-item[data-file="./src/explorer-code-files/about.md"]')
-  .click();
-
 // reload button -------------------------------------------------------------------------------|
 document.getElementById("reloadButton").addEventListener("click", function() {
   location.reload();
@@ -133,3 +128,8 @@ terminalHandle.addEventListener("pointermove", (event) => {
   const newHeight = terminalStartHeight - (event.clientY - terminalStartY);
   terminal.style.height = `${Math.max(80, newHeight)}px`;
 });
+
+// open about.md automatically upon page load ----------------------------------------------------|
+document
+  .querySelector('.file-item[data-file="./src/explorer-code-files/about.md"]')
+  .click();
