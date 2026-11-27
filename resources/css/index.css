@@ -330,7 +330,7 @@ body {
   overflow: auto;
   background-color: #222;
   background-image:
-    linear-gradient(rgba(34, 34, 34, 10), rgba(34, 34, 34, 0.9)),
+    linear-gradient(rgba(34, 34, 34, 10), rgba(34, 34, 34, 0.88)),
     url("../images/bgs/b&w_bg_3.jpg");
   background-position: center;
   background-size: cover;

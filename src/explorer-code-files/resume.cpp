@@ -1,5 +1,7 @@
 #include <iostream>
 
+// This file prints the contents of my resume!
+
 void printResume()
 {
     std::cout << "PAUL ALLEN | RESUME \n"

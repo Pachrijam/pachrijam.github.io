@@ -1,5 +1,7 @@
 <?php
 
+// This file displays projects I have completed or are currently working on!
+
 $projects = [
     [
         "name" => "Monte Carlo Simulation Engine",
