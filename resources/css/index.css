@@ -329,6 +329,12 @@ body {
   height: auto;
   overflow: auto;
   background-color: #222;
+  background-image:
+    linear-gradient(rgba(34, 34, 34, 10), rgba(34, 34, 34, 0.9)),
+    url("../images/bgs/b&w_bg_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 7px;
   border-width: 2px;
   color: white;
