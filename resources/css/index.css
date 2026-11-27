@@ -142,7 +142,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 8px;
+  width: 16px;
   cursor: ew-resize;
   touch-action: none;
 }
@@ -435,7 +435,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 8px;
+  height: 16px;
   cursor: ns-resize;
   touch-action: none;
   z-index: 1;
@@ -465,7 +465,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 8px;
+  width: 16px;
   cursor: ew-resize;
   touch-action: none;
   z-index: 1;
@@ -489,6 +489,7 @@ body {
 .featured a {
   position: relative;
   display: block;
+  container-type: inline-size;
   border-radius: 9px;
   overflow: hidden;
   text-decoration: none;
@@ -508,12 +509,12 @@ body {
 
 .overlay-text {
   position: absolute;
-  inset: auto 0 0;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 58%;
-  padding: 20px 28px 8px 8px;
+  justify-content: flex-end;
+  padding: clamp(8px, 2cqi, 16px);
   box-sizing: border-box;
   color: white;
   background: linear-gradient(180deg, transparent 0%, rgba(8, 10, 12, 0.78) 62%, rgba(8, 10, 12, 0.96) 100%);
@@ -524,7 +525,7 @@ body {
 .overlay-kicker {
   margin-bottom: 3px;
   color: #ffd166;
-  font-size: 7px;
+  font-size: clamp(8px, 1.8cqi, 11px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.12em;
@@ -534,7 +535,7 @@ body {
 
 .overlay-title {
   max-width: 92%;
-  font-size: clamp(9px, 0.72vw, 13px);
+  font-size: clamp(10px, 3cqi, 16px);
   font-weight: 800;
   line-height: 1.12;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
@@ -542,18 +543,20 @@ body {
 
 .overlay-arrow {
   position: absolute;
-  right: 7px;
-  bottom: 7px;
+  top: 50%;
+  left: 50%;
   display: grid;
-  width: 25px;
-  height: 25px;
+  width: clamp(45px, 8cqi, 40px);
+  height: clamp(45px, 8cqi, 40px);
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.12);
-  font-size: 20px;
+  font-size: clamp(18px, 4cqi, 24px);
   line-height: 1;
+  transform: translate(-50%, -50%);
   transition: transform 180ms ease, background-color 180ms ease;
+  box-shadow: inset 0 0 120px rgba(0,0,0,0.5);
 }
 
 .featured a:hover img,
@@ -564,7 +567,7 @@ body {
 
 .featured a:hover .overlay-arrow,
 .featured a:focus-visible .overlay-arrow {
-  transform: translate(1px, -1px);
+  transform: translate(-50%, -50%) scale(1.06);
   background: rgba(102, 153, 255, 0.25);
   border-color: #667fff;
 }

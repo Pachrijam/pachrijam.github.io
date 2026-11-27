@@ -5,6 +5,11 @@
     and displaying code to the main content area dynamically.
 */ 
 
+// open about.md automatically upon page load ----------------------------------------------------|
+document
+  .querySelector('.file-item[data-file="./src/explorer-code-files/about.md"]')
+  .click();
+
 // reload button -------------------------------------------------------------------------------|
 document.getElementById("reloadButton").addEventListener("click", function() {
   location.reload();
@@ -67,11 +72,6 @@ document.querySelectorAll(".file-item").forEach((button) => {
   });
 });
 
-// open about.md automatically upon page load ----------------------------------------------------|
-document
-  .querySelector('.file-item[data-file="./src/explorer-code-files/about.md"]')
-  .click();
-
 // .explorer horizontal div resizing -------------------------------------------------------------|
 const explorer = document.querySelector(".explorer");
 const explorerHandle = document.querySelector(".explorer-resize-handle");
@@ -94,7 +94,6 @@ explorerHandle.addEventListener('pointerdown', (event) => {
 
 explorerHandle.addEventListener("pointermove", (event) => {
   if(!explorerHandle.hasPointerCapture(event.pointerId)) return;
-
   const newWidth = explorerStartWidth + event.clientX - explorerStartX;
   explorer.style.width = `${Math.max(80, newWidth)}px`;
 });
@@ -113,7 +112,6 @@ featuredHandle.addEventListener('pointerdown', (event) => {
 
 featuredHandle.addEventListener("pointermove", (event) => {
   if(!featuredHandle.hasPointerCapture(event.pointerId)) return;
-
   const newWidth = featuredStartWidth - (event.clientX - featuredStartX);
   featured.style.width = `${Math.max(120, newWidth)}px`;
 });
@@ -132,7 +130,6 @@ terminalHandle.addEventListener('pointerdown', (event) => {
 
 terminalHandle.addEventListener("pointermove", (event) => {
   if(!terminalHandle.hasPointerCapture(event.pointerId)) return;
-
   const newHeight = terminalStartHeight - (event.clientY - terminalStartY);
   terminal.style.height = `${Math.max(80, newHeight)}px`;
 });
