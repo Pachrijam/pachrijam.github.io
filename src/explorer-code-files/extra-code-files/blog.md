@@ -10,17 +10,20 @@
     drop my language elective. It was 2024 at the time and the hype of Artificial 
     Intelligence was beginning to die down a bit. However, AI was present in my daily
     life everywhere, and you couldn't escape it no matter where you where.
+
 </p>
 <p>
     That wasn't a problem for me though. While some people feared AI and what it could
     do, I was instead intruiged by it. The fourth grade version of myself that wanted 
     to become a computer engineer, (not joking, I have a research project to back this up)
     felt more present in me than ever.
+
 </p>
 <p>
     So instead of pursing Italian III like my peers, I decided to take the introduction to
     python elective offered by my school. There I learned everything from strings to lists,
     and even did a small game project using Unity! I'll include a small C# snippet down below!
+
 </p>
 
 ```C#
@@ -50,10 +53,17 @@ public class winScreen : MonoBehaviour
     Advanced Placement Computer Science A my senior year of high school.
     This was a great choice because it set me up for success for my
     first semester college class "Data Structures".
+
 </p>
 <p>
-    In this class I learned basic Java and everything from object oriented programming to recursion! Recursion was not that fun. 
-    This class was in some ways harder than AP Calculus, the class in which I was taking at the same time. It challenged the way I approached problems and taught me more about how computers actually worked with less abstraction. I'll include a snippet of my APCSA final project code down below!
+    In this class I learned basic Java and everything from object oriented programming 
+    to recursion! Recursion was not that fun. 
+    This class was in some ways harder than AP Calculus, 
+    the class in which I was taking at the same time. 
+    It challenged the way I approached problems and taught me more about how 
+    computers actually worked with less abstraction. 
+    I'll include a snippet of my APCSA final project code down below!
+
 </p>
 
 ```java
@@ -75,5 +85,10 @@ public static void main(String[] args) throws FileNotFoundException {
 }
 ```
 <p>
-    As far as the Advanced Placement test goes, I scored a 4 on the exam. I was happy with the solutions I provided and I was able to skip Computer Science I at Rensselaer Polytechnic with this score. In the fall, I will begin learning C++ along with Data Structures and I am very excitied to see what lies ahead on my journey!    
+    As far as the Advanced Placement test goes, I scored a 4 on the exam. 
+    I was happy with the solutions I provided and I was able to skip Computer 
+    Science I at Rensselaer Polytechnic with this score. 
+    In the fall, I will begin learning C++ along with Data Structures 
+    and I am very excitied to see what lies ahead on my journey!
+
 </p>
